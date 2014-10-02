@@ -1,0 +1,25 @@
+{
+  "name": "formSubmit",
+  "version": "0.0.1",
+  "author": {
+    "name": "Konstantin Pluschnikow"
+  },
+  "license": "MIT",
+  "private": true,
+  "devDependencies": {
+    "grunt": "~0.4.5",
+    "grunt-cli": "~0.1.13",
+    "grunt-contrib-connect": "~0.5.0",
+    "grunt-contrib-copy": "~0.4.1",
+    "grunt-contrib-concat": "~0.4.0",
+    "grunt-contrib-jshint": "~0.10.0",
+    "grunt-contrib-uglify": "~0.4.0",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-throttle": "~0.2.1",
+    "grunt-contrib-qunit": "~0.5.2",
+    "grunt-bump": "0.0.16"
+  },
+  "scripts": {
+    "test": "grunt travis --verbose"
+  }
+}

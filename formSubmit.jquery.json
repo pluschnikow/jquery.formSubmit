@@ -1,0 +1,39 @@
+{
+	"name": "formSubmit",
+	"title": "jQuery Form-Submit",
+	"description": "A jQuery-Plugin to prevent a user send a form several times (double-click). In addition, it set a loading status to the button which signals that the form was already dispatched.",
+	"keywords": [
+		"jquery",
+		"form",
+		"submit",
+		"plugins",
+		"double-click",
+		"button"
+	],
+	"version": "1.0.0",
+	"author": {
+		"name": "Konstantin Pluschnikow (@pluschnikow)",
+		"email": "",
+		"url": "https://github.com/pluschnikow"
+	},
+	"maintainers": [
+		{
+			"name": "Konstantin Pluschnikow",
+			"email": " ",
+			"url": "https://github.com/pluschnikow"
+		}
+	],
+	"licenses": [
+		{
+			"type": "MIT",
+			"url": "http://pluschnikow.mit-license.org"
+		}
+	],
+	"bugs": "https://github.com/pluschnikow/jquery.formSubmit/issues",
+	"homepage": "https://github.com/pluschnikow/jquery.formSubmit",
+	"docs": "https://github.com/pluschnikow/jquery.formSubmit#readme",
+	"download": "https://github.com/pluschnikow/jquery.formSubmit/archive/master.zip",
+	"dependencies": {
+		"jquery": ">=1.10"
+	}
+}

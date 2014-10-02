@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>jQuery Plugin: Form-Submit</title>
+    <link href="btn.css" rel="stylesheet">
+  </head>
+  <body>
+    <script>
+      $(function() {
+        $("body").formSubmit();
+      });
+    </script>
+
+    <h2>Simple example:</h2>
+    <form action="/index2.html">
+      <button type="submit" class="btn">submit</button>
+    </form>
+
+    <hr>
+    
+    <h2>Example with HTML5 validation:</h2>
+    <form action="/index2.html">
+      <input type="text" required>
+      <button type="submit" class="btn">submit</button>
+    </form>
+
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="jquery.formSubmit.js"></script>
+  </body>
+</html>
