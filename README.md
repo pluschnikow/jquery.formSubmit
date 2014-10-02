@@ -6,32 +6,32 @@ A jQuery-Plugin to prevent a user send a form several times (double-click). In a
 
 1. Include jQuery:
 
-	```html
-	<script src="https://code.jquery.com/jquery-x.xx.x.min.js"></script>
-	```
+  ```html
+  <script src="https://code.jquery.com/jquery-x.xx.x.min.js"></script>
+  ```
 
 2. Include plugin's code:
 
-	```html
-	<script src="jquery.formSubmit.min.js"></script>
-	```
+  ```html
+  <script src="jquery.formSubmit.min.js"></script>
+  ```
 
 3. Call the plugin:
 
-	```javascript
-	$("body").formSubmit({
-			
-			// set submit button selector 
+  ```javascript
+  $("body").formSubmit({
+      
+      // set submit button selector 
       submitBtn: "[type=\"submit\"]",
 
-			// blacklist
-      // set a space seperated list of classes
+      // blacklist
+      // set a space separated list of classes
       classNoPrevention: "btn-no-prevention", 
 
-      // class for the loading state
+      // class for the loading status
       classBtn: "btn-loading"
-	});
-	```
+  });
+  ```
 
 #### [demo/](https://github.com/pluschnikow/jquery.formSubmit/tree/master/demo)
 
