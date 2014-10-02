@@ -87,7 +87,24 @@ module.exports = function(grunt) {
         downstream: 10*1024,
         keepalive: false
       }
-    }
+    },
+
+    bump: {
+      options: {
+        files: ['package.json'],
+        updateConfigs: [],
+        commit: true,
+        commitMessage: 'Release v%VERSION%',
+        commitFiles: ['package.json'],
+        createTag: true,
+        tagName: 'v%VERSION%',
+        tagMessage: 'Version %VERSION%',
+        push: true,
+        pushTo: 'upstream',
+        gitDescribeOptions: '--tags --always --abbrev=1 --dirty=-d',
+        globalReplace: false
+      }
+    },
   });
 
   grunt.loadNpmTasks("grunt-contrib-concat");
@@ -98,9 +115,12 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks("grunt-contrib-copy");
   grunt.loadNpmTasks("grunt-throttle");
   grunt.loadNpmTasks('grunt-contrib-qunit');
+  grunt.loadNpmTasks('grunt-bump');
 
   grunt.registerTask("demo", ["jshint", "copy:demo", "connect","throttle:default", "watch"])
   grunt.registerTask("default", ["jshint", "uglify"]);
   grunt.registerTask('test', ['connect:test', 'qunit']);
+
+  grunt.registerTask("travis", ["jshint"]);
 
 };
